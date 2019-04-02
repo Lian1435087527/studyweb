@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC   
+     "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"   
+     "http://struts.apache.org/dtds/struts-2.0.dtd">
+     
+     
+<struts>
+    <package name="liu" extends="struts-default">
+        <global-results>
+            <result name="succeed">/common/succeed.jsp</result>
+            <result name="successAdd">/common/add_success.jsp</result>
+        </global-results>
+        
+        <action name="upload" class="com.util.upload" method="upload">
+             <result name="success">/upload/upload_re.jsp</result>
+        </action>
+        
+        
+        <action name="index" class="indexAction" method="index">
+            <result name="success">/qiantai/index.jsp</result>
+        </action>
+        
+        
+        <action name="adminAdd" class="adminAction" method="adminAdd">
+        </action>
+        <action name="adminDel" class="adminAction" method="adminDel">
+        </action>
+        <action name="adminManage" class="adminAction" method="adminManage">
+            <result name="success">/admin/index/adminManage.jsp</result>
+        </action>
+        
+        
+        <action name="liuyanMana" class="liuyanAction" method="liuyanMana">
+             <result name="success">/admin/liuyan/liuyanMana.jsp</result>
+        </action>
+        <action name="liuyanAdd" class="liuyanAction" method="liuyanAdd">
+        </action>
+        <action name="liuyanDel" class="liuyanAction" method="liuyanDel">
+        </action>
+        <action name="liuyanAll" class="liuyanAction" method="liuyanAll">
+             <result name="success">/qiantai/liuyan/liuyanAll.jsp</result>
+        </action>
+        
+        
+        
+        <action name="gonggaoAdd" class="gonggaoAction" method="gonggaoAdd">
+        </action>
+        <action name="gonggaoDel" class="gonggaoAction" method="gonggaoDel">
+        </action>
+        <action name="gonggaoMana" class="gonggaoAction" method="gonggaoMana">
+            <result>/admin/gonggao/gonggaoMana.jsp</result>
+        </action>
+        <action name="gonggaoDetail" class="gonggaoAction" method="gonggaoDetail">
+            <result>/admin/gonggao/gonggaoDetail.jsp</result>
+        </action>
+        <action name="gonggaoDetailQian" class="gonggaoAction" method="gonggaoDetailQian">
+            <result>/qiantai/gonggao/gonggaoDetailQian.jsp</result>
+        </action>
+        <action name="gonggaoQian5" class="gonggaoAction" method="gonggaoQian5">
+            <result>/qiantai/gonggao/gonggaoQian5.jsp</result>
+        </action>
+        
+        
+        <action name="picNewsAdd" class="picNewsAction" method="picNewsAdd">
+        </action>
+        <action name="picNewsDel" class="picNewsAction" method="picNewsDel">
+        </action>
+        <action name="picNewsMana" class="picNewsAction" method="picNewsMana">
+             <result name="success">/admin/picNews/picNewsMana.jsp</result>
+        </action>
+        <action name="picNewsDetail" class="picNewsAction" method="picNewsDetail">
+             <result name="success">/admin/picNews/picNewsDetail.jsp</result>
+        </action>
+        <action name="picNewsDetailQian" class="picNewsAction" method="picNewsDetailQian">
+             <result name="success">/qiantai/picNews/picNewsDetailQian.jsp</result>
+        </action>
+        <action name="picNewsQian5" class="picNewsAction" method="picNewsQian5">
+             <result name="success">/qiantai/picNews/picNewsQian5.jsp</result>
+        </action>
+        
+        <action name="stuManage" class="stuAction" method="stuMana">
+            <result name="success">/admin/index/stuManage.jsp</result>
+        </action>
+        
+        <action name="stuReg" class="stuAction" method="stuReg"></action>
+        <action name="stuDel" class="stuAction" method="stuDel"></action>
+        
+        
+        
+        <action name="teacherManage" class="teaAction" method="teaMana">
+            <result name="success">/admin/index/teacherManage.jsp</result>
+        </action>
+        <action name="teaReg" class="teaAction" method="teaReg"></action>
+        <action name="teaDel" class="teaAction" method="teaDel"></action>
+        
+        
+        <action name="docAdd" class="docAction" method="docAdd">
+        </action>
+        <action name="docDel" class="docAction" method="docDel">
+        </action>
+        <action name="docMana" class="docAction" method="docMana">
+            <result name="success">/qiantai/doc/docMana.jsp</result>
+        </action>
+        <action name="docAll" class="docAction" method="docAll">
+            <result name="success">/qiantai/doc/docAll.jsp</result>
+        </action>
+        <action name="zuoyeAdd" class="docAction" method="zuoyeAdd">
+        </action>
+        <action name="zuoyeDel" class="docAction" method="zuoyeDel">
+        </action>
+        <action name="zuoyeMana" class="docAction" method="zuoyeMana">
+            <result name="success">/qiantai/zuoye/zuoyeMana.jsp</result>
+        </action>
+        <action name="zuoyeAll" class="docAction" method="zuoyeAll">
+            <result name="success">/qiantai/zuoye/zuoyeAll.jsp</result>
+        </action>
+        
+        
+    </package>
+</struts>

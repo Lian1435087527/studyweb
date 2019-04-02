@@ -1,0 +1,11 @@
+
+登陆地址：http://localhost:8080/jiaoxue
+
+登录账号名，密码：
+
+管理员：admin,admin
+
+教师：liu,liu
+
+学生：wanghui,wanghui
+
